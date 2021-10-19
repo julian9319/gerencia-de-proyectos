@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Online Shop</title>
+  <link rel="icon" type="image/jpg" sizes="16x16" href="img/logo.jpg">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="plugins/toastr/toastr.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="hold-transition login-page">
+<div class="login-box">
+
+  <div class="card card-outline card-primary">
+    <div class="card-header text-center">
+      <img src="img/logo.jpg" alt="" style="width: 200px; margin-top: 50px; margin-bottom: 50px;">
+    </div>
+    <div class="card-body">
+      <p class="login-box-msg">Ingresa las credenciales para iniciar</p>
+
+      <form id="form_login">
+        <div class="input-group mb-3">
+          <input type="text" placeholder="Usuario" name="user" class="form-control" required>
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-user"></span>
+            </div>
+          </div>
+          <span class="text-danger text-user"></span>
+        </div>
+        <div class="input-group mb-3">
+          <input id="password" type="password" name="password" class="form-control" placeholder="Contraseña" required>
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-lock"></span>
+            </div>
+          </div>
+          <br>
+        </div>
+        <div class="text-danger text-contrasena"></div>
+        <div class="row ">
+          <div class="col-12">
+            <div class="icheck-primary">
+              <input type="checkbox" id="remember" onchange="show_password(this)">
+              <label for="remember">
+                Mostrar contraseña
+              </label>
+            </div>
+      <p class="mb-5">
+        <a href="forgot-password.html">Olvide mi contraseña</a>
+      </p>
+          </div>
+
+          <div class="col-12">
+            <button type="submit" class="btn btn-success btn-block ">INICIAR SESIÓN</button>
+          </div>
+
+          <!-- <button type="button" class="btn btn-success toastsDefaultSuccess">
+                  Launch Success Toast
+                </button> -->
+         
+        </div>
+      </form>
+
+     
+
+      <p class="mb-0">
+        <!-- <a href="register.html" class="text-center">Registrarme</a> -->
+      </p>
+    </div>
+  
+  </div>
+ 
+</div>
+<script src="plugins/jquery/jquery.min.js"></script>
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="dist/js/adminlte.min.js"></script>
+<script src="plugins/toastr/toastr.min.js"></script>
+<script src="jquery.js"></script>
+<script src="scripts.js"></script>
+<script src="dist/js/demo.js"></script>
+
+<script type="text/javascript">
+
+alert('El usuario y la contraseña para el acceso son los siguientes:\n\nUsuario: admin\nContraseña: 1234')
+
+	$('.toastsDefaultSuccess').click(function() {
+      $(document).Toasts('create', {
+        class: 'bg-success',
+        title: 'Toast Title',
+        subtitle: 'Subtitle',
+        body: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
+      })
+    });
+</script>
+
+</body>
+</html>

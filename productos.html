@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="header"> contactanos: 3124567890 - 7654321</div>
+	<div class="menu">
+
+		<div class="container-logo">
+		</div>
+
+		<div>
+			<input list="browsers" name="browser" id="browser" placeholder="Buscar...">
+
+			<datalist id="browsers">
+			  <option value="Edge">
+			  <option value="Firefox">
+			  <option value="Chrome">
+			  <option value="Opera">
+			  <option value="Safari">
+			</datalist>
+
+		</div>
+
+		<div class="row">
+			<img src="img/user.jpg" alt="" class="user" > <h4 style="margin-left: 10px; margin-right: 5px; text-decoration: underline;">Mi Perfil 	|</h4><a id="logout" href="index.html"><h5>SALIR</h5></a>
+		</div>
+		
+	</div>
+
+	<div class="row"  id="products">
+	
+		<div class="col-1"></div>
+		<div class="col-2 ">
+			<div class="white filtrer">
+				<h4>Filtros de busqueda</h4>
+				<hr>
+				<h5>24 resultados en la busqueda</h5>
+				<hr>
+				<select name="" >
+					<option value="">Tipo de equipo</option>
+				</select>
+
+				<select name="" >
+					<option value="">Categoria</option>
+				</select>
+
+				<select name="" >
+					<option value="">Descripcíon</option>
+				</select>
+
+				<select name="" >
+					<option value="">Codigo</option>
+				</select>
+
+				<select name="" >
+					<option value="">Marca</option>
+				</select>
+
+				<select name="" >
+					<option value="">Referencia</option>
+				</select>
+
+				<label>% de descuento de 0 - 100</label>
+				<input type="range" value="0" id="" name="" min="0" max="100">
+
+				<label>Precio</label>
+				<input type="range" id="" name="" min="0" max="5000000">
+
+			</div>
+		</div>
+		<div class="col-6">
+
+			<div class="white col-10">
+
+				<button class="btn-new" onclick="new_product()">AGREGAR NUEVO</button>
+			
+				<h3>Lista de productos encontrados</h3>
+				<h5>Mostrando de 1 - 10 de 24</h5>
+			</div>
+
+
+			<div class="white col-10">
+			
+				<div class=" row ">
+					<div class="col-2 ">
+						<img src="img/pc-gamer.jpg" alt="Imagen" class="img-product">
+					</div>
+					<div class=" col-6">
+						<h4>PC-GAMER</h4>
+						<h5>Un pc gaming es un ordenador que está especialmente diseñado para jugar a videojuegos. Esto no significa que no puedas hacer otras funciones con él, como escribir textos, navegar por Internet o ver películas y vídeos</h5>
+						
+					</div>
+					<div class="col-2">
+						<div>
+							<span class="descuento">40% DE DESCUENTO</span>
+
+							<h5 class="price-after">$ 3.200.000 COP</h5>						
+							<h4 class="price">$ 3.200.000 COP</h4>	
+
+							<button class="btn-purchase">AÑADIR AL CARRITO</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="white col-10">
+			
+				<div class=" row ">
+					<div class="col-2 ">
+						<img src="img/celular.jpg" alt="Imagen" class="img-product">
+					</div>
+					<div class=" col-6">
+						<h4>iPhon 12</h4>
+						<h5>- Pantalla HDR.<br>
+							- Amplia gama de colores (P3)<br>
+							- Toque con respuesta háptica.<br>
+							- Relación de contraste 2,000,000:1 (normal)<br>
+							- Brillo máximo de 625 nits (normal); brillo máximo de 1,200 nits (HDR)<br>
+							- Revestimiento oleofóbico resistente a huellas dactilares.<bR>
+						</h5>
+						
+					</div>
+					<div class="col-2">
+						<div>
+							<span class="descuento">40% DE DESCUENTO</span>
+
+							<h5 class="price-after">$ 3.200.000 COP</h5>						
+							<h4 class="price">$ 3.200.000 COP</h4>	
+
+							<button class="btn-purchase">AÑADIR AL CARRITO</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="white col-10">
+			
+				<div class=" row ">
+					<div class="col-2 ">
+						<img src="img/tv.jpg" alt="Imagen" class="img-product">
+					</div>
+					<div class=" col-6">
+						<h4>Televisor 70"</h4>
+						<h5>- Pantalla HDR.<br>
+							- Amplia gama de colores (P3)<br>
+							- Toque con respuesta háptica.<br>
+							- Relación de contraste 2,000,000:1 (normal)<br>
+							- Brillo máximo de 625 nits (normal); brillo máximo de 1,200 nits (HDR)<br>
+							- Revestimiento oleofóbico resistente a huellas dactilares.<bR>
+						</h5>
+						
+					</div>
+					<div class="col-2">
+						<div>
+							<span class="descuento">40% DE DESCUENTO</span>
+
+							<h5 class="price-after">$ 3.200.000 COP</h5>						
+							<h4 class="price">$ 3.200.000 COP</h4>	
+
+							<button class="btn-purchase">AÑADIR AL CARRITO</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="white col-10">
+			
+				<div class=" row ">
+					<div class="col-2 ">
+						<img src="img/teatro.jpg" alt="Imagen" class="img-product">
+					</div>
+					<div class=" col-6">
+						<h4>Teatro en casa</h4>
+						<h5>- Pantalla HDR.<br>
+							- Amplia gama de colores (P3)<br>
+							- Toque con respuesta háptica.<br>
+							- Relación de contraste 2,000,000:1 (normal)<br>
+							- Brillo máximo de 625 nits (normal); brillo máximo de 1,200 nits (HDR)<br>
+							- Revestimiento oleofóbico resistente a huellas dactilares.<bR>
+						</h5>
+						
+					</div>
+					<div class="col-2">
+						<div>
+							<span class="descuento">40% DE DESCUENTO</span>
+
+							<h5 class="price-after">$ 3.200.000 COP</h5>						
+							<h4 class="price">$ 3.200.000 COP</h4>	
+
+							<button class="btn-purchase">AÑADIR AL CARRITO</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="white col-10">
+			
+				<ul class="pagination">
+				  <li><a href="#">«</a></li>
+				  <li><a class="active" href="#">1</a></li>
+				  <li><a href="#">2</a></li>
+				  <li><a href="#">3</a></li>
+				  <li><a href="#">4</a></li>
+				  <li><a href="#">5</a></li>
+				  <li><a href="#">6</a></li>
+				  <li><a href="#">7</a></li>
+				  <li><a href="#">»</a></li>
+				</ul>
+
+			</div>
+
+		</div>
+		<div class="col-1">
+		</div>
+	</div>
+
+	<div id="form_product" class="row ">
+		<div class="col-3"></div>
+		<div class="col-4  white">
+			<form action="productos.html" method="get" accept-charset="utf-8">
+				<h3>Agregar producto</h3>
+				<h6>Todos los campos identificados con <span class="text-danger">*</span> son de caracter obligario.</h6>
+
+				<div class="grup">
+					<label>Nombre</label> <span class="text-danger">*</span>
+					<input type="" name="" >
+				</div>
+
+				<div class="grup">
+					<label>Descripción</label> <span class="text-danger">*</span>
+					<textarea name=""></textarea>
+				</div>
+
+				<div class="grup">
+					<label>Precio anterior</label> <span class="text-danger">*</span>
+					<input type="" name="" >
+				</div>
+
+				<div class="grup">
+					<label>Precio nuevo</label> <span class="text-danger">*</span>
+					<input type="" name="" >
+				</div>
+
+				<div class="grup">
+					<label>% de descuento</label> <span class="text-danger">*</span>
+					<input type="" name="" >
+				</div>
+
+				<div class="grup">
+					<button class="btn-save" type="submit">GUARDAR PRODUCTO</button>
+					<button class="btn-cancel" type="button" onclick="cancel_new_product()">CANCELAR REGISTRO</button>
+				</div>
+				
+			</form>
+		</div>
+		<div class="col-3 "></div>
+	</div>
+
+	<div id="footer">2021 &copy; Grupo 0000 Materia Front Politecnico Grancolombiano</div>
+
+	<script src="jquery.js"></script>
+	<script src="scripts.js"></script>
+
+</body>
+</html>
